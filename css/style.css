@@ -1,0 +1,313 @@
+/* 導覽列 */
+
+.header_logo {
+    width: 185px;
+}
+
+.header_menu {
+    width: 30px;
+}
+
+.navbar {
+    padding: 12px 60px;
+    background-color: white !important;
+    box-shadow: 0 2px 5px #cccccc;
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+}
+
+.navbar__icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #6CA287;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* if unclick hamburger menu */
+    .navbar-toggler[aria-expanded="false"]  
+    .navbar__icon-bar {
+       transform: rotate(0);
+    }
+ 
+    /* hover unclick hamburger menu */
+    .navbar-toggler[aria-expanded="false"]:hover 
+    .navbar__icon-bar:nth-child(1) {
+       transform: translateY(-0.2rem);
+    }
+ 
+    .navbar-toggler[aria-expanded="false"]:hover 
+    .navbar__icon-bar:nth-child(2) {
+       transform: translateY(0.15rem);
+    }
+ 
+    /* if click hamburger menu */
+    .navbar-toggler[aria-expanded="true"] 
+    .navbar__icon-bar:nth-child(1) {
+       transform: rotate(45deg);
+       transform-origin: 29% 10%;
+    }
+ 
+    .navbar-toggler[aria-expanded="true"]  
+    .navbar__icon-bar:nth-child(2) {
+       transform: rotate(-45deg);
+       transform-origin: 29% 90%;
+    }
+ 
+ }
+
+.nav-link {
+    color: #6CA287 !important;
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 16px !important;
+}
+.nav-link:hover {
+    color: #E5DD91 !important;
+}
+
+.navbar-toggler {
+    border: 0px;
+    padding: 10px;
+}
+
+.btn-home {
+    width: 15px;
+}
+
+.btn-home:hover {
+    content: url(../img/home_hover.png);
+}
+
+.btn-facebook {
+    width: 20px;
+}
+
+.btn-facebook:hover {
+    content: url(../img/facebook_hover.png);
+}
+
+.btn-ininstagram {
+    width: 20px;
+}
+
+.btn-ininstagram:hover {
+    content: url(../img/instagram_hover.png);
+}
+
+
+/*最新消息*/
+
+.container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.row {
+    --bs-gutter-x:0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news {
+    justify-content: center;
+}
+
+.news-bg {
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .news-bg {
+        background-image: url(../img/news-img2.png);
+        background-size: 600px 600px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .news-bg {
+        background-image: url(../img/news-img2.png);
+        background-size: cover;
+        background-size: 320px 320px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+.title-center {
+    color: #6CA287;
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #696868;
+}
+
+.news-link:hover {
+    color: white;
+}
+
+.news-block {
+    display: block;
+    border: solid 2px #6CA287;
+    width: 315px;
+    height: 145px;
+    margin: 50px auto;
+    
+    background: linear-gradient(to left, white 50%, #6CA287 50%) right;
+    background-size: 200%;
+    transition: .3s ease-out;
+}
+
+@media screen and (max-width: 320px) {
+    .news-block {
+        width: 280px;
+        height: 145px;
+    }
+}
+
+.news-block:hover {
+    /* background-color: #6CA287; */
+    background-position: left;
+}
+
+.news-block p {
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 16px;
+    margin: 47px 0 5px 53px;
+}
+
+
+.news-block h1 {
+    font-family: 'Noto Sans TC';
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 53px;
+}
+
+@media screen and (max-width: 320px) {
+    .news-block p {
+        margin-left: 40px;
+    }
+    .news-block h1 {
+        margin-left: 40px;
+    }
+}
+
+.news-img {
+    display: flex;
+    width: 550px;
+    height: 550px;
+    margin-top: 50px;
+    justify-content: center !important;
+}
+
+@media screen and (max-width: 768px) {
+    .news-img {
+        display: none;
+    }
+}
+
+/*地圖*/
+
+.map-image1 {
+    margin-top: 30px;
+}
+
+
+.map-btn {
+    display: flex;
+    margin-right: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .map-btn {
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .map-btn {
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+}
+
+.btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px #cccccc;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn h1 {
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 16px;
+    color: #6CA287;
+    margin-top: 3px;
+}
+
+.btn:hover {
+    background-color:  #f3f3f3;
+    transition: 0.4s;
+    transform : scale(0.92);
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #6CA287;
+    padding: 20px 10px;
+}
+
+
+.footer_all {
+    display: flex;
+    justify-self: center;
+}
+
+.footer-icon {
+    height: 20px;
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 12px;
+
+    margin-left: 10px;
+}
+
+.footer-copy {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 12px;
+}
