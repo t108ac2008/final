@@ -1,0 +1,226 @@
+/* 導覽列 */
+
+.header_logo {
+    width: 185px;
+}
+
+.header_menu {
+    width: 30px;
+}
+
+.navbar {
+    padding: 12px 60px;
+    background-color: white !important;
+    box-shadow: 0 2px 5px #cccccc;
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 12px 20px;
+    }
+}
+
+.navbar__icon-bar {
+    width: 22px;
+    height: 2px;
+    background-color: #6CA287;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    margin: 4px 0;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* if unclick hamburger menu */
+    .navbar-toggler[aria-expanded="false"]  
+    .navbar__icon-bar {
+       transform: rotate(0);
+    }
+ 
+    /* hover unclick hamburger menu */
+    .navbar-toggler[aria-expanded="false"]:hover 
+    .navbar__icon-bar:nth-child(1) {
+       transform: translateY(-0.2rem);
+    }
+ 
+    .navbar-toggler[aria-expanded="false"]:hover 
+    .navbar__icon-bar:nth-child(2) {
+       transform: translateY(0.15rem);
+    }
+ 
+    /* if click hamburger menu */
+    .navbar-toggler[aria-expanded="true"] 
+    .navbar__icon-bar:nth-child(1) {
+       transform: rotate(45deg);
+       transform-origin: 29% 10%;
+    }
+ 
+    .navbar-toggler[aria-expanded="true"]  
+    .navbar__icon-bar:nth-child(2) {
+       transform: rotate(-45deg);
+       transform-origin: 29% 90%;
+    }
+ 
+ }
+
+.nav-link {
+    color: #6CA287 !important;
+    font-family: 'Noto Sans TC';
+    font-weight: 400;
+    font-size: 16px !important;
+}
+.nav-link:hover {
+    color: #E5DD91 !important;
+}
+
+.navbar-toggler {
+    border: 0px;
+    padding: 10px;
+}
+
+.btn-home {
+    width: 15px;
+}
+
+.btn-home:hover {
+    content: url(../img/home_hover.png);
+}
+
+.btn-facebook {
+    width: 20px;
+}
+
+.btn-facebook:hover {
+    content: url(../img/facebook_hover.png);
+}
+
+.btn-ininstagram {
+    width: 20px;
+}
+
+.btn-ininstagram:hover {
+    content: url(../img/instagram_hover.png);
+}
+
+/*內容*/
+/*.custom-container-width {
+    max-width: 900px;
+}*/
+
+.title {
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6CA287;
+}
+
+.main {
+    margin-top: 240px;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        margin-top: 50px;
+    }
+}
+
+.main_text {
+    line-height: 25px;
+    margin-bottom: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .main_text {
+        margin-bottom: 50px;
+    }
+}
+
+
+a {
+    text-decoration:none
+}
+
+p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #696868;
+}
+
+.side {
+    margin-right: 40px;
+    margin-left:40px;
+}
+
+@media screen and (max-width: 768px) {
+    .side{
+        margin-right: 20px;
+        margin-left:20px;
+        width: 30%;
+    }
+}
+
+.side:hover{
+    width: 30%;
+    transition: 0.5s;
+    transform : scale(1.05);
+
+}
+
+.side_text {
+    margin-top: 28px;
+    font-weight: 600;
+    color: #696868;
+    margin-bottom: 80px;
+
+}
+
+.side_text:hover {
+    color: #6CA287;
+    font-weight: 900;
+    transition: 0.5s;
+    transform : scale(1.05);
+
+}
+
+.side_icon {
+    width: 80%;
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    .side_icon{
+
+        width: 80%;
+    }
+}
+/*footer*/
+
+footer {
+    background-color: #6CA287;
+    padding: 20px 10px;
+}
+
+.footer_all {
+    display: flex;
+    justify-self: center;
+}
+
+.footer-icon {
+    height: 20px;
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 12px;
+
+    margin-left: 10px;
+}
+
+.footer-copy {
+    color: white;
+    font-family: 'Noto Sans TC';
+    font-weight: 300;
+    font-size: 12px;
+}
